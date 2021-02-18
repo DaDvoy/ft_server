@@ -1,0 +1,33 @@
+server {
+		listen 80 default_server;
+		listen [::]:80 default_server;
+
+		root /var/www/html;
+
+		return 301 https://$host$request_uri;
+		server_name my_cont;
+}
+
+server {
+		listen 443 ssl default_server;
+		listen [::]:443 ssl default_server;
+		
+		ssl on;
+		ssl_certificate /etc/keys/my_certificate.crt;
+		ssl_certificate_key /etc/keys/my_key.key;
+		
+		index index.html index.htm index.php;
+
+		server_name my_cont;
+
+		root /var/www/html;
+
+				location / {
+					autoindex on;
+						try_files $uri $uri/ =404;
+				}
+				location ~ \.php$ {
+						include snippets/fastcgi-php.conf;
+						fastcgi_pass unix:/run/php/php7.3-fpm.sock;
+				}
+}
