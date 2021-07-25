@@ -6,4 +6,4 @@ https://github.com/ifanzilka/ft_server - ссылка на гит Фанзиля
 
 
 
-https://forhjy.medium.com/how-to-install-lemp-wordpress-on-debian-buster-by-using-dockerfile-1-75ddf3ede861 и https://forhjy.medium.com/42-ft-server-how-to-install-lemp-wordpress-on-debian-buster-by-using-dockerfile-2-4042adb2ab2c - ссылкка от rburton(ДимаКим), ещё не смотрела, но он сказал что по ним за ночь его сделал))
+https://forhjy.medium.com/how-to-install-lemp-wordpress-on-debian-buster-by-using-dockerfile-1-75ddf3ede861 и https://forhjy.medium.com/42-ft-server-how-to-install-lemp-wordpress-on-debian-buster-by-using-dockerfile-2-4042adb2ab2c - ссылкка от rburton(ДимаКим).
